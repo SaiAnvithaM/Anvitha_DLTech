@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Time.com stories</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1 style="background-color: rgb(214, 108, 21);
+        color: azure;
+        text-align: center;">Latest Stories from Time.com</h1>
+
+        <div style="height:300px;width:85%;">
+            <ul>
+            <% latestStories.forEach(story => { %>
+              <li style="list-style: none;"><a style="text-decoration: none;font-size: 20px; color:gray;" href="<%= story.link %>"><%= story.title %></a></li>
+            <% }); %>
+          </ul>
+        </div>
+   
+        <div class="news_container">
+            <div class="news_img">
+                <img style=" margin: auto;
+                height:400px;
+                width:65%;
+                display: flex;" src="https://api.time.com/wp-content/uploads/2024/04/google-project-nimbus-no-tech-for-apartheid-2.jpg?quality=85&w=925&h=617&crop=1&resize=925,617" alt="">
+                <div style="display: flex;" class="news_time">
+                    <p style="margin:auto;display:flex">APRIL 8, 2024 • 8:00 AM</p>
+                </div>
+            </div>
+            <div class="news_content">
+                <h3 style="text-align: center;"><a style=" text-decoration: none;
+                    color:black;" href="https://time.com/6964364/exclusive-no-tech-for-apartheid-google-workers-protest-project-nimbus-1-2-billion-contract-with-israel/">Google Workers Revolt Over $1.2 Billion Contract With Israel</a></h3>
+            </div>
+
+        </div>
+        <div class="news_container">
+            <div class="news_img">
+                <img style=" margin: auto;
+                height:400px;
+                width:65%;
+                display: flex;" src="https://api.time.com/wp-content/uploads/2024/03/watch-solar-eclipse.jpg?quality=85&w=925&h=617&crop=1&resize=925,617" alt="">
+                <div style="display: flex;" class="news_time">
+                    <p style="margin:auto;display:flex">APRIL 8, 2024 • 10:10 AM</p>
+                </div>
+            </div>
+            <div class="news_content">
+                <h3 style="text-align: center;"><a style=" text-decoration: none;
+                    color:black;" href="https://time.com/6958424/how-to-watch-solar-eclipse-safely/">How to Safely Watch the Total Eclipse</a></h3>
+            </div>
+
+        </div>
+        <div class="news_container">
+            <div class="news_img">
+                <img style=" margin: auto;
+                height:400px;
+                width:65%;
+                display: flex;" src="https://api.time.com/wp-content/uploads/2024/04/eclipse-chasers.jpg?quality=85&w=925&h=617&crop=1&resize=925,617" alt="">
+                <div style="display: flex;" class="news_time">
+                    <p style="margin:auto;display:flex">APRIL 8, 2024 • 8:00 AM</p>
+                </div>
+            </div>
+            <div class="news_content">
+                <h3 style="text-align: center;"><a style=" text-decoration: none;
+                    color:black;" href="https://time.com/6963961/solar-eclipse-chasers-2024/">Meet the Eclipse Chasers Traveling Thousands of Miles for the Astronomical Event</a></h3>
+            </div>
+        </div>
+
+    
+        <script src="../script.js"></script>
+    </body>
+</html>
